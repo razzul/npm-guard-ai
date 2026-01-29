@@ -1,0 +1,5 @@
+{
+  "name": "NPM Guard AI",
+  "description": "An intelligent NPM package security and health auditor that analyzes your package.json for vulnerabilities, deprecations, and updates using Gemini AI.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NPM Guard AI - Security Auditor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Inter', sans-serif; }
+      /* Custom styles for the d3 tree nodes */
+      .rd3t-label__title { font-weight: 700; font-size: 14px; fill: #1e293b; pointer-events: none; }
+      .rd3t-label__attributes { font-size: 11px; fill: #64748b; pointer-events: none; }
+      .rd3t-link { stroke: #cbd5e1; stroke-width: 1.5px; transition: stroke 0.3s; }
+      
+      @keyframes pulse-red {
+        0% { filter: drop-shadow(0 0 2px rgba(239, 68, 68, 0.7)); }
+        50% { filter: drop-shadow(0 0 10px rgba(239, 68, 68, 0.9)); }
+        100% { filter: drop-shadow(0 0 2px rgba(239, 68, 68, 0.7)); }
+      }
+      @keyframes pulse-amber {
+        0% { filter: drop-shadow(0 0 2px rgba(245, 158, 11, 0.7)); }
+        50% { filter: drop-shadow(0 0 10px rgba(245, 158, 11, 0.9)); }
+        100% { filter: drop-shadow(0 0 2px rgba(245, 158, 11, 0.7)); }
+      }
+      .node-vulnerability { animation: pulse-red 2s infinite; }
+      .node-outdated { animation: pulse-amber 3s infinite; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "react-d3-tree": "https://esm.sh/react-d3-tree@^3.6.2",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50 text-slate-900">
+    <div id="root"></div>
+  </body>
+</html>
